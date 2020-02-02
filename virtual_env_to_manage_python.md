@@ -12,7 +12,11 @@ We use a module named `virtualenv` which is a tool to create isolated Python env
 
 #### Installing virtualenv
 
+In your terminal: 
+```
 $ pip install virtualenv
+```
+
 Test your installation:
 ```
 $ virtualenv --version
