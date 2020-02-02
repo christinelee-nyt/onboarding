@@ -34,10 +34,18 @@ If you want to specify Python interpreter of your choice, for example Python 3, 
 ```
 $ virtualenv -p /usr/bin/python3 virtualenv_name
 ```
+or 
+```
+virtualenv paidmed_venv
+```
 
 Now after creating virtual environment, you need to activate it. Remember to activate the relevant virtual environment every time you work on the project. This can be done using the following command:
 ```
 $ source virtualenv_name/bin/activate
+```
+or 
+```
+source paidmed_venv/bin/activate
 ```
 
 Once the virtual environment is activated, the name of your virtual environment will appear on left side of terminal. This will let you know that the virtual environment is currently active. 
@@ -48,10 +56,14 @@ For example if you are using Django 1.9 for a project, you can install it like y
 ```
 (virtualenv_name)$ pip install Django==1.9
 ```
+or for my case:
+```
+(paidmed_venv) A9627:~ 211493$ pip install --upgrade google-cloud-bigquery
+```
 
-The Django 1.9 package will be placed in virtualenv_name folder and will be isolated from the complete system.
+The `google-cloud-bigquery` package will be placed in `paidmed_venv` folder and will be isolated from the complete system.
 
 Once you are done with the work, you can deactivate the virtual environment by the following command:
 ```
-(virtualenv_name)$ deactivate
+(paidmed_venv)$ deactivate
 ```
