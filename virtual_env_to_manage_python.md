@@ -45,7 +45,7 @@ $ source virtualenv_name/bin/activate
 ```
 or 
 ```
-source paidmed_venv/bin/activate
+$ source paidmed_venv/bin/activate
 ```
 
 Once the virtual environment is activated, the name of your virtual environment will appear on left side of terminal. This will let you know that the virtual environment is currently active. 
@@ -59,11 +59,13 @@ For example if you are using Django 1.9 for a project, you can install it like y
 or for my case:
 ```
 (paidmed_venv) A9627:~ 211493$ pip install --upgrade google-cloud-bigquery
+(paidmed_venv) A9627:~ 211493$ pip install jupyterlab plotly numpy pandas statsmodels scipy sklearn seaborn pandas-gbq
 ```
 
-The `google-cloud-bigquery` package will be placed in `paidmed_venv` folder and will be isolated from the complete system.
+The `google-cloud-bigquery` package and other packages will be placed in `paidmed_venv` folder and will be isolated from the complete system.
 
 Once you are done with the work, you can deactivate the virtual environment by the following command:
 ```
 (paidmed_venv)$ deactivate
 ```
+
